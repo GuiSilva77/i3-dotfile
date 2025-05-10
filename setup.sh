@@ -4,7 +4,7 @@ set -e
 echo "📦 Installing i3 environment with minimal setup..."
 
 # Tooling 
-sudo pacman -S --noconfirm base-devel git
+sudo pacman -S --noconfirm base-devel git less
 
 # Core packages
 sudo pacman -Syu --noconfirm \
@@ -26,6 +26,15 @@ sudo pacman -Syu --noconfirm \
     lightdm-gtk-greeter-settings \
     xfce4-terminal    
 
+# Network: Using NetworkManager
+sudo pacman -S --noconfirm \
+    networkmanager \
+    network-manager-applet \
+    network-connection-editor
+
+sudo systemctl enable NetworkManager.service
+
+
 # Audio: Using Pipewire as Fedora default
 sudo pacman -S --noconfirm \
     pipewire pipewire-pulse wireplumber \
@@ -43,7 +52,7 @@ sudo systemctl enable lightdm.service
 echo "LightDM Enabled!"
 
 echo "Setting i3 as XSession default..."
-mkdir -p ~/.xsession
+touch ~/.xsession
 echo "exec i3" > ~/.xsession
 
 
