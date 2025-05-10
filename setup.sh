@@ -30,7 +30,7 @@ sudo pacman -Syu --noconfirm \
 sudo pacman -S --noconfirm \
     networkmanager \
     network-manager-applet \
-    network-connection-editor
+    nm-connection-editor
 
 sudo systemctl enable NetworkManager.service
 
