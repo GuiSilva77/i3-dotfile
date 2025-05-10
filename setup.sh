@@ -20,7 +20,10 @@ sudo pacman -Syu --noconfirm \
     lxsession \
     xterm \
     ttf-hack-nerd \
-    xorg-setxkbmap
+    xorg-setxkbmap \
+    lightdm \
+    lightdm-gtk-greeter \
+    lightdm-gtk-greeter-settings
 
 # Audio: Using Pipewire as Fedora default
 sudo pacman -S --noconfirm \
@@ -33,6 +36,15 @@ sudo pacman -S --noconfirm \
     i3status \
     rofi \
     picom
+
+echo "Enabling LightDM..."
+sudo systemctl enable lightdm.service
+echo "LightDM Enabled!"
+
+echo "Setting i3 as XSession default..."
+mkdir -p ~/.xsession
+echo "exec i3" > ~/.xsession
+
 
 echo "🧠 Dotfile environment installed. Ready to test polybar, i3, and startup behavior."
 
