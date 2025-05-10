@@ -23,7 +23,8 @@ sudo pacman -Syu --noconfirm \
     xorg-setxkbmap \
     lightdm \
     lightdm-gtk-greeter \
-    lightdm-gtk-greeter-settings
+    lightdm-gtk-greeter-settings \
+    xfce4-terminal    
 
 # Audio: Using Pipewire as Fedora default
 sudo pacman -S --noconfirm \
