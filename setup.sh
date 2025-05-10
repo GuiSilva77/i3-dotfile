@@ -41,11 +41,14 @@ sudo pacman -S --noconfirm \
     alsa-utils \
     pavucontrol
 
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+
 # Optional / Quality-of-life
 sudo pacman -S --noconfirm \
     i3status \
     rofi \
-    picom
+    picom \
+    firefox
 
 echo "Enabling LightDM..."
 sudo systemctl enable lightdm.service
