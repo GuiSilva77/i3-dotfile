@@ -39,8 +39,8 @@ sudo systemctl enable NetworkManager.service
 sudo pacman -S --noconfirm \
     pipewire pipewire-pulse wireplumber \
     alsa-utils \
-    pavucontrol
-
+    pavucontrol \
+    volumeicon
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 # Optional / Quality-of-life

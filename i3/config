@@ -33,6 +33,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id feh --bg-scale ~/.config/wallpaper/wallpaperflare.com_wallpaper.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id setxkbmap br
+exec_always --no-startup-id volumeicon
 exec --no-startup-id xrandr --output HDMI-1 --primary --auto --right-of eDP-1
 exec --no-startup-id lxpolkit
 
