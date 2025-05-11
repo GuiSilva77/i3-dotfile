@@ -43,6 +43,21 @@ sudo pacman -S --noconfirm \
     volumeicon
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
+# Theme: Install breeze-dark and configure it
+sudo pacman -S --noconfirm \
+	breeze-gtk breeze-icons
+
+mkdir -p ~/.config/gtk-3.0
+cat > ~/.config/gtk-3.0/settings.ini <<EOF
+[Settings]
+gtk-theme-name=Breeze-Dark
+gtk-icon-theme-name=breeze-dark
+gtk-font-name=Sans 10
+EOF
+echo 'gtk-theme-name="Breeze-Dark"' > ~/.gtkrc-2.0
+echo 'gtk-icon-theme-name="breeze-dark"' >> ~/.gtkrc-2.0
+
+
 # Optional / Quality-of-life
 sudo pacman -S --noconfirm \
     i3status \
@@ -57,7 +72,6 @@ echo "LightDM Enabled!"
 echo "Setting i3 as XSession default..."
 touch ~/.xsession
 echo "exec i3" > ~/.xsession
-
 
 echo "🧠 Dotfile environment installed. Ready to test polybar, i3, and startup behavior."
 
