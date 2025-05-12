@@ -34,15 +34,13 @@ exec_always --no-startup-id feh --bg-scale ~/.config/wallpaper/wallpaperflare.co
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id setxkbmap br
 exec_always --no-startup-id volumeicon
-exec --no-startup-id xrandr --output HDMI-1 --primary --auto --right-of eDP-1
+exec --no-startup-id xrandr --output Virtual-1 --primary --mode 1920x1080
 exec --no-startup-id lxpolkit
 
 # ────────────────
 # Display Workspace to Screen Mapping
 # ────────────────
-workspace 1 output HDMI-1
-workspace 2 output HDMI-1
-workspace 3 output eDP-1
+workspace 1 output Virtual-1
 
 # ────────────────
 # i3 Status Refresh
