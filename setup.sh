@@ -62,7 +62,6 @@ echo 'gtk-icon-theme-name="breeze-dark"' >> ~/.gtkrc-2.0
 sudo pacman -S --noconfirm \
     i3status \
     rofi \
-    picom \
     firefox
 
 echo "Enabling LightDM..."
