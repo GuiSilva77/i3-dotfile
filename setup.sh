@@ -24,7 +24,7 @@ sudo pacman -Syu --noconfirm \
     lightdm \
     lightdm-gtk-greeter \
     lightdm-gtk-greeter-settings \
-    xfce4-terminal    
+    alacritty    
 
 # Network: Using NetworkManager
 sudo pacman -S --noconfirm \
