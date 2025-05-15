@@ -1,0 +1,52 @@
+window:
+  opacity: 0.85
+  blur: true
+  padding:
+    x: 6
+    y: 4
+  decorations: none
+  dynamic_title: true
+
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  size: 11.0
+  offset:
+    x: 0
+    y: 0
+
+colors:
+  primary:
+    background: '0x0f1a24'
+    foreground: '0xECEFF4'
+
+  normal:
+    black:   '0x1B2B34'
+    red:     '0xEC5F67'
+    green:   '0x99C794'
+    yellow:  '0xF0C674'  # Straw Hat Gold
+    blue:    '0x6699CC'
+    magenta: '0xC594C5'
+    cyan:    '0x5FB3B3'
+    white:   '0xECEFF4'
+
+  bright:
+    black:   '0x4C566A'
+    red:     '0xF2777A'
+    green:   '0xA6E22E'
+    yellow:  '0xFFE792'
+    blue:    '0x82AAFF'
+    magenta: '0xD4BFFF'
+    cyan:    '0x95E6CB'
+    white:   '0xFFFFFF'
+
+cursor:
+  style:
+    shape: Beam
+    blinking: On
+  blink_interval: 500
+
+selection:
+  save_to_clipboard: true
+
