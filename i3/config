@@ -19,8 +19,8 @@ client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
-gaps inner 0
-gaps outer 10
+gaps inner 5
+gaps outer 0
 gaps top 0
 smart_gaps off
 
@@ -37,7 +37,7 @@ exec_always --no-startup-id setxkbmap br
 exec_always --no-startup-id volumeicon
 exec --no-startup-id xrandr --output Virtual-1 --primary --mode 1920x1080
 exec --no-startup-id lxpolkit
-
+exec --no-startup-id copyq
 # ────────────────
 # Display Workspace to Screen Mapping
 # ────────────────

@@ -24,6 +24,7 @@ sudo pacman -Syu --noconfirm \
     lightdm \
     lightdm-gtk-greeter \
     lightdm-gtk-greeter-settings \
+    copyq \
     alacritty    
 
 # Network: Using NetworkManager
