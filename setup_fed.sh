@@ -6,6 +6,14 @@ echo "📦 Installing i3 environment with minimal setup..."
 # Tooling 
 sudo dnf group install development-tools
 
+curl -o /tmp/Hack.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip
+
+unzip /tmp/Hack.zip -d ~/.local/share/fonts/
+
+fc-cache -vf ~/.local/share/fonts/
+
+fc-list : family style | grep -i nerd
+
 # Core packages
 sudo dnf install -y \
     polybar \
